@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('variables/', include('variables.urls')),
+    path('home/', views.home),
+    path('measurements/', include('measurements.urls')),
 ]
